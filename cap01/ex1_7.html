@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const valorJantar = Number(prompt('Digite o valor do jantar: '))
+      const taxaGarcon = valorJantar / 10 // is the same: var * 0.10
+      const total = valorJantar + taxaGarcon
+      alert(
+        `Taxa do Garçon R$: ${taxaGarcon.toFixed(
+          1
+        )} \n Total a Pagar R$: ${total.toFixed(1)}`
+      )
+    </script>
+  </body>
+</html>
