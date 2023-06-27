@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 6.C</title>
+  </head>
+  <body>
+    <h1>Programa Concurso</h1>
+    <form>
+      <label for="candidato">
+        Candidato:
+        <input type="text" id="candidato" required autofocus />
+      </label>
+      <br />
+      <label for="acertos">
+        Nº de Acertos:
+        <input type="number" id="acertos" min="0" required />
+        <input type="submit" value="Adicionar" />
+      </label>
+      <br />
+      <br />
+      <input type="button" value="Listar Todos" id="btnListar" />
+      <input type="button" value="Aprovados 2º Etapa" id="btnAprovados" />
+    </form>
+    <pre></pre>
+    <script src="./js/ex6_c.js"></script>
+  </body>
+</html>
