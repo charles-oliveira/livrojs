@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 7.7</title>
+  </head>
+  <body>
+    <script>
+      //   const hoje = new Date()
+      //   const amanha = new Date()
+      //   const dia = amanha.getDate()
+
+      //   amanha.setDate(dia + 1)
+      //   console.log(`
+      //     Hoje: ${hoje}
+      //     Amanhã: ${amanha}
+      //   `)
+
+      // const anoAtual = new Date().getFullYear()
+      // const idade = prompt(`Quantos anos você comemora em ${anoAtual}?`)
+      // const anoNasc = anoAtual - idade
+      // alert(`Ah... Então você nasceu em ${anoNasc}`)
+      // console.log(anoAtual)
+
+      const hoje = new Date()
+      // console:  2023/06/28
+
+      const dia = hoje.getDate() // 28
+      console.log(dia)
+      const mes = Number(hoje.getMonth()) + 1 // 06
+      console.log(mes)
+      const ano = hoje.getFullYear() // 2023
+      console.log(ano)
+
+      console.log(`
+        Data: ${dia}/${mes}/${ano}
+      `)
+    </script>
+  </body>
+</html>

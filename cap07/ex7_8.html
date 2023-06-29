@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 7.8</title>
+  </head>
+  <body>
+    <h1>Programa Caixa da Loja</h1>
+    <form>
+      <label for="dataVencimento">
+        Data de vencimento:
+        <input type="date" id="dataVencimento" required />
+      </label>
+      <br />
+      <br />
+      <label for="valorContas">
+        Valor da Conta R$:
+        <input type="number" id="valorConta" min="0" step="0.01" required />
+        <input type="submit" value="Calcular Multa e Juros" />
+      </label>
+      <br />
+      <br />
+      <label for="valorMulta">
+        Valor da Multa R$:
+        <input type="number" id="valorMulta" readonly />
+      </label>
+      <br />
+      <br />
+      <label for="valorJuros">
+        Valor da Juros R$:
+        <input type="number" id="valorJuros" readonly />
+      </label>
+      <br />
+      <br />
+      <label for="valorPagar">
+        Total a Pagar R$.:
+        <input type="number" id="valorPagar" readonly />
+        <input type="reset" value="Nova Conta" />
+      </label>
+    </form>
+    <script src="./js/ex7_8.js"></script>
+  </body>
+</html>
