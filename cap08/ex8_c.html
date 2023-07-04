@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 8.C</title>
+    <style>
+      .oculta {
+        display: none;
+      }
+      .exibe {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Veterinária Avenida</h1>
+    <form>
+      <label for="valVacina">
+        Valor da Vacina:
+        <input
+          type="number"
+          id="valVacina"
+          min="0"
+          step="0.01"
+          required
+          autofocus
+        />
+      </label>
+      <br />
+      <label for="convenio">
+        Possui Convênio:
+        <input type="radio" id="rbSim" checked autofocus /> Sim
+        <input type="radio" id="rbNao" /> Não
+        <br />
+        <br />
+        <select id="tipoConvenio" class="oculta">
+          <option value="amigosAnimais">Amigos dos Animais</option>
+          <option value="saudeAnimal">Saúde Animal</option>
+        </select>
+      </label>
+      <input type="submit" value="Calcular Desconto" />
+    </form>
+    <h3 id="respOut1"></h3>
+    <h3 id="respOut2"></h3>
+    <script src="./js/ex8_c.js"></script>
+  </body>
+</html>
